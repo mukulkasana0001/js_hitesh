@@ -13,9 +13,9 @@ button.forEach( (button)=>{
      }
      if(e.target.id==="blue"){
         body.style.backgroundColor="blue";
-     }
+     } 
      if(e.target.id==="yellow"){
-        body.style.backgroundColor="yellow";
+        body.style.backgroundColor="yellow";  
      }
     })
 });
