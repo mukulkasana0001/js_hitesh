@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom four by hitesh |☕</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language" id="lang">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addlanguage(langName) {
+            const li =  document.createElement("li");
+           li.innerHTML = `${langName}`
+
+    // ***   const ul = document.getElementById("lang")
+    //        ul.appendChild(li)                              ****  ?
+
+           document.querySelector('.language').appendChild(li)
+                                 }
+addlanguage("python")
+
+
+
+function addOptiLanguage(langName){
+    const li = document.createElement("li");
+    li.append(document.createTextNode(`${langName}`))
+     const ul =document.querySelector('.language');
+     ul.appendChild(li)
+
+}
+addOptiLanguage("python");
+addOptiLanguage("java");
+
+
+//Edit
+const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    //secondLang.innerHTML = "Mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secondLang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+    
+</script>
+</html>
