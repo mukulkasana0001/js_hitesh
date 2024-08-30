@@ -1,4 +1,4 @@
-//  Primitive
+//  Primitive (all go to stack and  give a copy )
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -12,13 +12,13 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+console.log(id === anotherId); //false
 
 // const bigNumber = 3456543576654356754n
 
 
 
-// Reference (Non primitive)
+// Reference (Non primitive)  (all go to heap and gives its refrence)
 
 // Array, Objects, Functions
 
