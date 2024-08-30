@@ -9,7 +9,7 @@ let valueInNumber = Number(score)
 
 
 // "33" => 33
-// "33abc" => NaN
+// "33abc" => NaN (its data type is number)
 //  true => 1; false => 0
 
 let isLoggedIn = "hitesh"
