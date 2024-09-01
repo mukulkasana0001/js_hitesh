@@ -18,7 +18,7 @@ const myArr = [0, 1, 2, 3, 4, 5]
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(3));
 
-// const newArr = myArr.join()
+// const newArr = myArr.join()   // it bind and convert into string
 
 // console.log(myArr);
 // console.log( newArr);
@@ -28,13 +28,13 @@ const myArr = [0, 1, 2, 3, 4, 5]
 
 console.log("A ", myArr);
 
-const myn1 = myArr.slice(1, 3)
+const myn1 = myArr.slice(1, 3)    //it cannot change the orignal array  ,it count (n - 1)th element
 
 console.log(myn1);
 
 console.log("B ", myArr);
 
-const myn2 = myArr.splice(1, 3)
+const myn2 = myArr.splice(1, 3)    //splice update te orignal array and remove the spliced element ,it also count the nth elenemt 
 console.log("C ", myArr);
 console.log(myn2);
 

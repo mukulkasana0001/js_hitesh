@@ -1,5 +1,5 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// const tinderUser = new Object()    //singleton 
+const tinderUser = {}                 //non-singleton 
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
@@ -52,7 +52,7 @@ users[1].email
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  //it check that there is a Property lies or not
 
 
 const course = {
@@ -63,8 +63,8 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
-
+const {courseInstructor: instructor} = course    // by this we can need to write course.courseInstructor all time
+                                                   //  we can directly write it as courseInstructor
 // console.log(courseInstructor);
 console.log(instructor);
 
