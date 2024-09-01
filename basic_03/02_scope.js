@@ -52,7 +52,8 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)     // it show an error because we cant acces addTwo function before initilige 
+                            //so we  have to call function after initilige
 const addTwo = function(num){
     return num + 2
 }

@@ -1,11 +1,11 @@
-// Immediately Invoked Function Expressions (IIFE)
+// Immediately Invoked Function Expressions (IIFE)   {it is use for prevent global variable pollution}
 
 
 (function chai(){
     // named IIFE
     console.log(`DB CONNECTED`);
 })();
-
+      // use semicolon
 
 // WITHOUT NAME IIFE
 ( (name) => {
