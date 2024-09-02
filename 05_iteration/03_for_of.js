@@ -34,7 +34,8 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {
+// for (const [key, value] of myObject) {       // it not work beacuse we can't itrate object like that ,
+                                                 // we can itrate using for-in loo
 //     console.log(key, ':-', value);
     
 // }

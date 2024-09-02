@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
+// coding.forEach( function (val){              //forEach take a call back function
 //     console.log(val);
 // } )
 
@@ -12,7 +12,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe)        //here we only write only function refrence
 
 // ***IN PRINTME FUNCTION WE USE REFERENCE WHEN  CALL NOT EMPLEMENT IT 
 
