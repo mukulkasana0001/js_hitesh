@@ -42,7 +42,7 @@
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
-    //     //**** "e.stopPropagation()" -->IT STOP THE BUBLING OR CAPTURING 
+    //     //**** "e.stopPropagation()" -->IT STOP THE BUBLING OR CAPTURING  (it rum only inside  child stop to run outside parent ) 
     //  }, false)
     
     // document.getElementById('google').addEventListener('click',function(e){
@@ -52,6 +52,9 @@
     //     console.log("google clicked");
     // }, false)
    
+    
+
+
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);

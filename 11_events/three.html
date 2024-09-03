@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>chai or js video 38</h1>
     <button id="start">start</button>
     <button id="stop">stop</button>
 </body>
 <script>
-    
+
     // const sayDate = function(str){
     //     console.log(str, Date.now());
     // }
@@ -21,14 +23,14 @@
     // clearInterval(intervalId)
 
 
-    // *** WE CAN PASS THE PAREMETER IN "setInterval" as here we pass "hello" as paremeter
+    // *** WE CAN PASS THE PAREMETER IN "setInterval" as here we pass "hi" as paremeter
 
 
 
 
 
 
-// *************
+    // *************
     // Q -> use start and stop button to manage the interval start and stop process ?....
 
     // Ans -> 
@@ -37,26 +39,27 @@
     const stop = document.querySelector("#stop")
 
 
-    start.addEventListener("click",function(){
-         set()
+    start.addEventListener("click", function () {
+        set()
     })
 
-    function set(){
-        const intervalID = setInterval(saydate,2000,"hello");
-        stop.addEventListener("click",function(){
-        dismis(intervalID);
-    })
-       }
-    
-       function dismis(intervalID){
+    function set() {
+        const intervalID = setInterval(saydate, 2000, "hello");
+        stop.addEventListener("click", function () {
+            dismis(intervalID);
+        })
+    }
+
+    function dismis(intervalID) {
         clearInterval(intervalID);
         console.log("stoped")
     }
-    var saydate = function (str){
+    var saydate = function (str) {
         console.log(str)
     }
 
-    
+
 
 </script>
+
 </html>
