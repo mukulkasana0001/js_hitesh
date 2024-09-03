@@ -100,8 +100,8 @@ const promisFour = new Promise(function(resolve,reject){
     // ***USING ASYNC AWAIT FUNCTION
     const promiseFive = new Promise(function(resolve, reject){
         setTimeout(function(){
-            let error = false
-            if (error) {
+            let error = true        // if true that mean an error occure and if false that mean erroe not occure
+            if (!error) {
                 resolve({username: "javascript", password: "123"})
             } else {
                 reject('ERROR: JS went wrong')
@@ -114,6 +114,8 @@ const promisFour = new Promise(function(resolve,reject){
     //          console.log(responce)
     //     }
 
+
+                             // it run securly when error not come but what if an error come
     // ****IN ASYNC AWAIT FUNCTION WE CAN'T HANDELE ERRORS DIRECTLY 
 
     // ***** SO WE USE try OR catch  FUNCTION WITH ASYNC FUNCTION TO HANDEL THE ERROR DIRECTLY
@@ -130,12 +132,12 @@ const promisFour = new Promise(function(resolve,reject){
     consumePromiseFive()
     
 
-
+         
 
 
     // async function getalluser(){
     //     try{
-    //          const responce =    await  fetch('https://jsonplaceholder.typicode.com/users')
+    //          const responce =    await  fetch('https://jsonplaceholder.typicode.com/users')       //  fetch return a promise
     //           const data = await responce.json()
     //           console.log(data)
     //     }
