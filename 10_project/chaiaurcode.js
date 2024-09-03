@@ -18,6 +18,7 @@ let playgame = true;
 if (playgame) {
   submit.addEventListener('click', function (e) {
     e.preventDefault();
+   
     
     const quess = parseInt(userinput.value);
      console.log(quess);
