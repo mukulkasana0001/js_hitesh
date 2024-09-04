@@ -30,12 +30,12 @@ function user(username,logincount,islogedin){
 }
 
 const userOne = new user("hitesh", 12, true)
-const userTwo = new user("ChaiAurCode", 11, false)
+const userTwo = new user("ChaiAurCode", 11, false)    // new give alwaya new instance or copy
 console.log(userOne)
 console.log(userTwo.constructor)
 
 
 // ****new 
-// 1. it creat empty object  (instance)
-// 2. constractor function call  because of new keyword
-// 3.argument is injected in object by this keyword
+//step 1. it creat empty object  (instance) 
+//step 2. constractor function call  because of new keyword
+//step 3.argument is injected in object by this keyword
