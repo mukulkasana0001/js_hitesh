@@ -11,19 +11,24 @@
  console.log(multiplyby5(5))
  console.log( multiplyby5.power)
  console.log( multiplyby5.prototype)
+
+
+
  function creatuser(username,score) {
     this.username=username
     this.score = score
  }
 
- creatuser.prototype.increment = function(){
+ creatuser.prototype.increment = function(){         //here we add new properties (increment) in creatuser  
     this.score++
  } 
- creatuser.prototype.printme= function(){
-    console.log(`score is : ${this.score}`)
- } 
-
- const chai = new creatuser('chai',40)
+ creatuser.prototype.printme= function(){            //here we add new properties (printme) in creatuser 
+    console.log(`score is : ${this.score}`)       
+ }                                                    // now new properties is added in creatuser
+                                                    
+ const chai = new creatuser('chai',40)                  // here we transfer values from creatuser to chai ,
+                                                      //  but we can't tell to the chai the new properties is added in creatuser,
+                                                      // so for tell to the chai that new properties is added  we use "new"  keyword.
 //  const tea = creatuser('tea',50)
  console.log(chai)
 //  console.log(tea)
