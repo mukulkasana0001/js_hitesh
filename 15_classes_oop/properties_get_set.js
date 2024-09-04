@@ -6,7 +6,7 @@ Object.defineProperty(this,'email',{
     get: function(){
        return this._email.toUpperCase()
     },
-    set function(value){
+    set: function(value){
             this._email =value
     }
 })
