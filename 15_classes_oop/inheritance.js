@@ -11,7 +11,7 @@ class user{
 
 class teacher extends user {
     constructor(username,password,email){
-       super(username)
+       super(username)            // it automaticaly refer to the extended class and (it pass 'this' and set username and give access the username ) (it work as like call())
     //    ** super()  TAKES THE DIRECT ACCESS OF USERNAME  FROM user CLASS 
         this.email = email
          this.password = password
