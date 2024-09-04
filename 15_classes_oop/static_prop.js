@@ -21,10 +21,11 @@ class teacher extends user {
     constructor(username,email){
         super(username)
         this.email = email
+     
     //   we only use super() before this 
     }
 }
 
 const iphone = new teacher("iphone","iphone@4321")
 iphone.logme()
-iphone.createdid()
+// iphone.createdid()
