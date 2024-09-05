@@ -25,6 +25,23 @@
     // init()
 
 
+//     In JavaScript, lexical scope (or static scope) refers to the way variable scope is 
+// determined by the location of the variable declarations in the code. In other words,
+//  where the variables and blocks of code are written influences their accessibility.
+
+// Here's how lexical scope works in JavaScript:
+
+// Global Scope: Variables declared outside any function are in the global scope and 
+// can be accessed anywhere in the program.
+
+// Function Scope: Variables declared inside a function are scoped to that function and can 
+// only be accessed within it or nested (inner) functions. Variables declared with var inside a function 
+// are function-scoped, meaning they are limited to that function.
+
+// Block Scope: With let and const, variables are block-scoped. This means they are confined to the 
+// nearest enclosing block (e.g., inside a {}), like loops or conditional blocks.
+
+
 
 
     // function outer(){
@@ -45,7 +62,22 @@
     // outer()
     // console.log("TOO OUTER", username);
 
+
+
+
+    // In this example, innerFunction has access to outerVariable because of lexical scope.
+    //  Even though outerVariable is declared in the outer function, it can still be accessed by the
+    //   inner function due to how scopes are nested.
+
+// ***Key Points:
+// JavaScript uses lexical scoping to resolve variable names.
+// Inner functions can access variables from their outer functions, but outer functions cannot access variables declared inside inner functions.
+// Block-scoped variables (with let or const) follow stricter scoping rules compared to var.
+
     // **** ABOVE is for laxical scoping
+
+
+
 
 
     //  ***BELOW CODE FOR CLOSURE 
@@ -55,13 +87,13 @@
     //     function displayname(){
     //         console.log(name)
     //     }
-    //     return displayname;
+    //     return displayname;     //  HERE IT RETURN THE ALL LEXICAL SCOPE   (LIKE -- displayname() and makefun FUNCTION VARIABLES  )
     // }
      
     // const myfun = makefun();
     // myfun()
 
-    // HERE IT RETURN THE ALL LEXICAL SCOPE   (LIKE -- makefun FUNCTION VARIABLES )
+    // HERE IT RETURN THE ALL LEXICAL SCOPE   (LIKE -- displayname() and makefun FUNCTION VARIABLES  )
 
 
 </script>
@@ -78,13 +110,13 @@
 
  function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`
-           return function(){
-            document.body.style.backgroundColor = `${color}`
+           return function(){                             // here we return a lexical function  
+            document.body.style.backgroundColor = `${color}`    // so  return function has a access of color
            }
 
  }
 
- document.getElementById("orange").onclick = clickHandler("orange")
+ document.getElementById("orange").onclick = clickHandler("orange")  // we create a inner function (return function) because onclick teke a function 
  document.getElementById("green").onclick = clickHandler('green')
 
 </Script>
